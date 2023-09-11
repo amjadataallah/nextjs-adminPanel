@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { AiOutlineCheck } from "react-icons/ai";
-import { BsChevronExpand } from "react-icons/bs";
 
 const actions = [
   { id: 1, label: "User Dashboard", route: "/users/dashboard" },
@@ -34,7 +32,7 @@ const UserAreaSelectBox = () => {
         >
           {actions.map((item) => (
             <div
-              key={item}
+              key={item.id}
               className={`flex justify-center items-center py-2 hover:bg-sky-300 cursor-pointer `}
               onClick={() => {
                 setOpen(false);
