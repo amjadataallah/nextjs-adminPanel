@@ -51,8 +51,8 @@ const MainSidebar = () => {
             <h3 className="flex-1">Singular</h3>
             <FaAngleRight />
           </div>
-          <ul className="ml-8 mt-4">
-            <li className="flex justify-center items-center gap-3">
+          <ul className="ml-4 mt-4">
+            <li className="flex justify-center items-center gap-2">
               <SiSinglestore />
               <Link href="/singular/selectbox" onClick={closeSideBarHandler}>
                 Select Box
@@ -60,10 +60,23 @@ const MainSidebar = () => {
             </li>
           </ul>
         </li>
-        <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
-          <FaCheckDouble className="mr-2" />
-          <h3 className="flex-1">Complex</h3>
-          <FaAngleRight />
+        <li className="flex flex-col justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
+          <div className="w-full flex flex-row justify-start items-center">
+            <FaCheckDouble className="mr-2" />
+            <h3 className="flex-1">Complex</h3>
+            <FaAngleRight />
+          </div>
+          <ul className="mt-4 ml-4">
+            <li className="flex justify-center items-center gap-2">
+              <SiSinglestore />
+              <Link
+                href="/complex/horizantal-scrollbar"
+                onClick={closeSideBarHandler}
+              >
+                Horizantal Scrollbar
+              </Link>
+            </li>
+          </ul>
         </li>
         <li className="flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2">
           <SiHelpscout className="mr-2" />
