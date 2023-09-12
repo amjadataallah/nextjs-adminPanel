@@ -4,7 +4,7 @@ import { MdOutlineWrongLocation } from "react-icons/md";
 
 const NotFoundPage = () => {
   return (
-    <div className="h-screen pt-20">
+    <div className="bg-white rounded-lg mx-4 p-4">
       <div className="pl-0">
         <div className="flex justify-center items-center">
           <MdOutlineWrongLocation
