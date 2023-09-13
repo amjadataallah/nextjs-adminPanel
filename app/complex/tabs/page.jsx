@@ -1,6 +1,8 @@
 import TabsComponent from "@/components/tabs/TabsComponent";
 import React from "react";
 
+
+
 const TabsPage = () => {
   return (
     <div className="bg-white rounded-lg mx-4 p-4">
@@ -12,6 +14,7 @@ const TabsPage = () => {
 };
 
 export default TabsPage;
+
 
 const items = [
   {
