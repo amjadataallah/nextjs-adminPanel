@@ -36,7 +36,7 @@ const categories = [
 ];
 
 // create 20 random fake users
-const users = new Array(20).fill(0).map((item, index) => {
+const users = new Array(40).fill(0).map((item, index) => {
   return {
     id: index,
     username: `U#${index}`,

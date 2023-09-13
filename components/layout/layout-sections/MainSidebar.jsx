@@ -52,7 +52,7 @@ const MainSidebar = () => {
             <FaAngleRight />
           </div>
           <ul className="ml-4 mt-4">
-            <li className="flex justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <SiSinglestore />
               <Link href="/singular/selectbox" onClick={closeSideBarHandler}>
                 Select Box
@@ -67,13 +67,19 @@ const MainSidebar = () => {
             <FaAngleRight />
           </div>
           <ul className="mt-4 ml-4">
-            <li className="flex justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <SiSinglestore />
               <Link
                 href="/complex/horizantal-scrollbar"
                 onClick={closeSideBarHandler}
               >
                 Horizantal Scrollbar
+              </Link>
+            </li>
+            <li className="flex justify-start items-center gap-2 my-1">
+              <SiSinglestore />
+              <Link href="/complex/tabs" onClick={closeSideBarHandler}>
+                Tabs
               </Link>
             </li>
           </ul>
